@@ -28,7 +28,8 @@ public class LinearSearch2Darr {
             for (int j = 0; j < col; j++) {
                 if (array[i][j] == searchItem) {
                     System.out.println("Element found in row " + i + " col " + j);
-
+                } else {
+                    System.out.println("Not found");
                 }
             }
             System.out.println();
