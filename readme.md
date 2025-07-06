@@ -322,3 +322,194 @@ ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
 ---
 
 > ✨ Happy Coding & All the Best for Placements! 🚀
+
+# 📘 DSA Topics in Order – Java Edition
+
+Structured roadmap for placement preparation and interview readiness.
+
+---
+
+## 🧭 Java Basics (if not clear)
+
+- Input/Output
+- Data Types & Operators
+- Conditionals & Loops
+- Arrays and Strings
+- Functions & Recursion
+- Object-Oriented Programming (OOPs)
+
+---
+
+## 📗 1. Arrays
+
+- Traversal, Insertion, Deletion
+- Searching & Sorting
+- Prefix Sum, Sliding Window
+- Two Pointers, Binary Search
+
+---
+
+## 📗 2. Strings
+
+- String Manipulation
+- Palindromes, Anagrams
+- Substrings, Pattern Matching
+- StringBuilder Usage
+
+---
+
+## 📗 3. Recursion
+
+- Basic recursion problems
+- Recursion tree
+- Tail recursion
+- Recursive arrays/strings
+
+---
+
+## 📗 4. Backtracking
+
+- Subsets, Permutations
+- N-Queens, Sudoku Solver
+- Word Search
+
+---
+
+## 📗 5. Linked List
+
+- Singly & Doubly Linked List
+- Insertion, Deletion, Reversal
+- Detect & Remove Loop (Floyd’s Cycle)
+- Merge, Sort, Palindrome check
+
+---
+
+## 📗 6. Stack & Queue
+
+- Stack: Using array/linked list
+- Infix/Postfix, Balanced Parentheses
+- Queue, Circular Queue
+- Deque, Priority Queue
+
+---
+
+## 📗 7. Hashing
+
+- HashMap, HashSet
+- Frequency count
+- Count pairs, subarrays, anagrams
+- Custom Hashing Problems
+
+---
+
+## 📗 8. Sliding Window & Two Pointers
+
+- Max subarray sum
+- Longest substring without repeat
+- Fixed/Variable size window
+
+---
+
+## 📗 9. Binary Search & Binary Search on Answers
+
+- Search in sorted array
+- First/Last occurrence
+- Search in Rotated Sorted Array
+- Min/max value problems
+
+---
+
+## 📗 10. Bit Manipulation
+
+- Set/Unset bit, Toggle bit
+- Count set bits
+- Power of 2, XOR problems
+
+---
+
+## 📗 11. Mathematics & Number Theory
+
+- GCD, LCM, Prime Numbers
+- Sieve of Eratosthenes
+- Modular Arithmetic
+
+---
+
+## 📗 12. Greedy Algorithms
+
+- Activity Selection
+- Fractional Knapsack
+- Job Scheduling
+- Minimum Platforms
+
+---
+
+## 📗 13. Heaps / Priority Queue
+
+- Min/Max Heap
+- Kth Largest/Smallest
+- HeapSort
+- Top K frequent elements
+
+---
+
+## 📗 14. Trees
+
+- Binary Tree & BST
+- Tree Traversals (Inorder, Preorder, Postorder, Level Order)
+- Height, Diameter, LCA
+- Balanced Tree, Mirror Tree
+
+---
+
+## 📗 15. Tries (Prefix Tree)
+
+- Insert/Search/Prefix Check
+- Word Dictionary
+- Autocomplete systems
+
+---
+
+## 📗 16. Graphs
+
+- Representation: Adjacency List/Matrix
+- Traversals: BFS, DFS
+- Detect Cycles (Directed/Undirected)
+- Topological Sort
+- Dijkstra, Prim, Kruskal
+- Union-Find (Disjoint Set)
+
+---
+
+## 📗 17. Dynamic Programming (DP)
+
+- 0/1 Knapsack
+- Fibonacci, LIS, LCS
+- Matrix DP
+- DP on Trees
+- DP on Subsequences
+
+---
+
+## 📗 18. Segment Trees & Binary Indexed Trees
+
+- Range Queries (Sum/Min/Max)
+- Point Updates
+- Lazy Propagation (Advanced)
+
+---
+
+## 📗 19. Advanced Topics
+
+- Sliding Window Maximum (Deque + Heap)
+- Monotonic Stack
+- Fenwick Tree
+- Centroid Decomposition (CP)
+
+---
+
+> 🎯 Recommended: Follow Striver A2Z DSA Sheet or Love Babbar 450 DSA Sheet
+
+---
+
+✨ Happy Learning and All the Best for Placements!
