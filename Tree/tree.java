@@ -1,3 +1,7 @@
+import java.util.LinkedList;
+
+import java.util.Queue;
+
 public class tree {
     static class Node {
         int data;
@@ -50,6 +54,56 @@ public class tree {
         inOrder(root.right);
     }
 
+    public static void postOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.data + " ");
+    }
+
+    public static void levelOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        q.add(null);
+
+        while (!q.isEmpty()) {
+            Node currNode = q.remove();
+            if (currNode == null) {
+                System.out.println();
+                if (q.isEmpty()) {
+                    break;
+                } else {
+                    q.add(null);
+                }
+            } else {
+                System.out.print(currNode.data + " ");
+                if (currNode.left != null) {
+                    q.add(currNode.left);
+                }
+                if (currNode.right != null) {
+                    q.add(currNode.right);
+                }
+            }
+        }
+    }
+
+    public static int countNodes(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftNodes = countNodes(root.left);
+        int rightNodes = countNodes(root.right);
+
+        return leftNodes + rightNodes + 1;
+    }
+
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         Binarytree tree = new Binarytree();
@@ -57,6 +111,9 @@ public class tree {
         // System.out.println(root.data);
         // preOrder(root);
         // inOrder(root);
+        // postOrder(root);
+        // levelOrder(root);
+        // System.out.println(countNodes(root));
 
     }
 }
