@@ -128,6 +128,49 @@ public class tree {
         return max;
     }
 
+    // diameter approach-1
+    public static int diameter(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int dia1 = diameter(root.left);
+        int dia2 = diameter(root.right);
+        int dia3 = hieght(root.left) + hieght(root.right) + 1;
+
+        return Math.max(dia3, Math.max(dia1, dia2));
+    }
+
+    // approach-2
+    static class TreeInfo {
+        int ht;
+        int dia;
+
+        TreeInfo(int ht, int dia) {
+            this.ht = ht;
+            this.dia = dia;
+        }
+    }
+
+    public static TreeInfo diameter2(Node root) {
+        if (root == null) {
+            return new TreeInfo(0, 0);
+        }
+        TreeInfo left = diameter2(root.left);
+        TreeInfo right = diameter2(root.right);
+
+        int myHT = Math.max(left.ht, right.ht) + 1;
+
+        int dia1 = left.dia;
+        int dia2 = right.dia;
+        int dia3 = left.ht + right.ht + 1;
+
+        int myDia = Math.max(Math.max(dia1, dia2), dia3);
+
+        TreeInfo myInfo = new TreeInfo(myHT, myDia);
+        return myInfo;
+    }
+
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         Binarytree tree = new Binarytree();
@@ -139,7 +182,8 @@ public class tree {
         // levelOrder(root);
         // System.out.println(countNodes(root));
         // System.out.println(sumOfNodes(root));
-        System.out.println(hieght(root));
+        // System.out.println(hieght(root));
+        System.out.println(diameter2(root).dia);
 
     }
 }
