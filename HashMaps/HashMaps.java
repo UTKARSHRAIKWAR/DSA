@@ -38,7 +38,7 @@ public class HashMaps { // Unordered
 
         // iteration on Map
         for (Map.Entry<String, Integer> e : map.entrySet()) {
-            System.out.println(e.getKey());
+            System.out.println(e.getKey() + "keyy");
             System.out.println(e.getValue());
         }
 
